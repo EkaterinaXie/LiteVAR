@@ -18,3 +18,13 @@ local_output*
 *.log
 *.txt
 *.ipynb
+*.png
+*.jpg
+dididi.py
+demo_sample_batch_1.py
+demo_sample_batch_quant_wr.py
+models/caogao.py
+models/dididi.py
+models/dl.py
+models/draw_window_on_image_copy.py
+vae_ch160v4096z32.pth.1

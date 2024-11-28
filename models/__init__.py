@@ -16,9 +16,9 @@ def build_vae_var(
     flash_if_available=True, fused_if_available=True,
     init_adaln=0.5, init_adaln_gamma=1e-5, init_head=0.02, init_std=-1,    # init_std < 0: automated
 ) -> Tuple[VQVAE, VAR]:
-    heads = depth
-    width = depth * 64
-    dpr = 0.1 * depth/24
+    heads = depth # 30
+    width = depth * 64 # 1920
+    dpr = 0.1 * depth/24 # 0.125
     
     # disable built-in initialization for speed
     for clz in (nn.Linear, nn.LayerNorm, nn.BatchNorm2d, nn.SyncBatchNorm, nn.Conv1d, nn.Conv2d, nn.ConvTranspose1d, nn.ConvTranspose2d):
